@@ -7,7 +7,7 @@ type Status = 'idle' | 'decoding' | 'processing' | 'ready' | 'error'
 type Format = 'mp3' | 'wav'
 
 const DEPTH_MIN = 0
-const DEPTH_MAX = 1
+const DEPTH_MAX = 0.3
 const DEPTH_STEP = 0.01
 const DEPTH_DEFAULT = 0.1
 
@@ -247,9 +247,9 @@ export default function App() {
     <div className="min-h-svh bg-zinc-950 text-zinc-100">
       <main className="mx-auto flex max-w-xl flex-col gap-8 px-6 py-12">
         <header className="space-y-2">
-          <h1 className="text-2xl font-semibold tracking-tight">AM変調</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">うねり生成</h1>
           <p className="text-sm leading-relaxed text-zinc-400">
-            楽曲指定した変調深度と変調周波数で AM 変調します。
+            指定した変調深度と変調周波数で楽曲にうねりを加えます。
           </p>
         </header>
 
